@@ -13,3 +13,7 @@ use_python("/Users/yanyuming/anaconda3/envs/myEnvironment/bin/python",
 use_condaenv("myEnvironment", required = T)
 ```
 
+
+```{r setup, include=FALSE}
+```
+
