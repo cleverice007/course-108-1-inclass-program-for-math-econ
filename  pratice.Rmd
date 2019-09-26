@@ -1,0 +1,53 @@
+---
+title: "課堂練習"
+date: "9/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(reticulate)
+use_python("/Users/yanyuming/anaconda3/envs/myEnvironment/bin/python",
+           required = T)
+use_condaenv("myEnvironment", required = T)
+```
+
+```{python}
+setE={"a","b","b"}
+print(setE)
+```
+
+
+```{python}
+listA = [('Mary','John'),('A2838','C8898'),(89,73)]
+len(listA) # 元素個數
+listA[0] # 取第0個元素
+listA[0][1] # 取第0個元素出在，接著取它的第1個元素
+
+type(listA[0])
+type(listA[0][1])
+```
+```{python}
+tupleC=(1,["a","b"],True)
+tupleC[1][1]
+```
+```{python}
+listA=['A','B','C','D','E','F','G','H','I','J']
+listA[0:5:2]
+listA[-2:5:-1]
+listA[-2:-6:-1]
+listA[-5:-1:1]
+listA[-5:]
+```
+
+
+```{python}
+[listA[index] for index in [0,2]]
+```
+```{python}
+listB=[2,5,-1,31,-22,3,17,25]
+[listB[i] for i in [0,6,7]]
+s```
+
+
