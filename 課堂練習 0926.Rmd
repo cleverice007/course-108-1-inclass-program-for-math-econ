@@ -1,0 +1,42 @@
+---
+title: "課堂練習"
+date: "9/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(reticulate)
+use_python("/Users/yanyuming/anaconda3/envs/myEnvironment/bin/python",
+           required = T)
+use_condaenv("myEnvironment", required = T)
+```
+
+```{python}
+grade = {'學號':[172,214,322,425,517],
+           '姓名' :['小明' ,'大雄','胖虎','小新','大白'],
+          '成績' : [80,60,90,70,50]
+          }
+grade['成績'][0]
+
+type(grade)
+```
+```{python}
+numList=[3,2,11,43]
+[numList[i]+3 for i in [0,1,2,3]]
+```
+
+```{python}
+{grade['姓名'][i]:grade['成績'][i]  for i in [0,1,2,3,4]}
+
+```
+```{python}
+listF=[2,5,10,11,-1,7]
+listG=[4,7,-2,10,11,15]
+[listG[i]>listF[i] for i in [0,1,2,3,4,5]]
+
+```
+
+
+
