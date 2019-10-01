@@ -2,6 +2,8 @@
 title: "課堂練習"
 date: "9/12/2019"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -12,4 +14,47 @@ use_python("/Users/yanyuming/anaconda3/envs/myEnvironment/bin/python",
            required = T)
 use_condaenv("myEnvironment", required = T)
 ```
+
+```{python}
+listA=['A','B','C','D','E','F','G','H','I','J']
+listA
+```
+
+
+```{python}
+listA[0:5:1]
+listA[0:5]
+listA[0:5:2]
+listA[:5] # 前面5個
+```
+```{python}
+listA
+listA[-2:5:-1]
+listA[-2:-6:-1]
+listA[-5:-1:1]
+listA[-5:] # 倒數後5個
+```
+
+```{python}
+list(listA[index] for index in [0,2])
+listB=[2,5,-1,31,-22,3,17,25]
+[listB[i] for i in [0,6,7]]
+```
+
+
+```{python}
+dictionaryA ={"name": "Mary", "id": "A28374", "grade": 77}
+dictionaryA
+{ dictionaryA[key] for key in ['name','grade']} # dictionary comprehension
+```
+
+```{python}
+dictionaryA={
+"姓名": "小明",
+"年齡": 33
+}
+dictionaryA["姓名"]="小銘"
+dictionaryA
+```
+
 
